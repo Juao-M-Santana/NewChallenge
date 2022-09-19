@@ -6,45 +6,78 @@
 
 ul{
     list-style: none;
-
 }
-
 body{
+
     background-image: url(./assets/Fundo.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #121214;
 }
+/* colocando font*/
+body *{
+    font-family: "Montserrat", sans-serif;
+    line-height: 160%
 
-body * {
-    font-family: 'Montserrat', sans-serif ;
-    line-height: 160%;
 }
 
 main{
+
+    margin-top: 32px;
+
     max-width: 520px;
     width: 90%;
     margin: auto;
+
+    display: grid;
+    gap: 24px;
 }
 
 section{
     color: white;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%),
+    linear-gradient(0deg, #262629, #262629);
+
+    padding-top: 4px;
+    border-radius: 10px;
 }
 
-section h2 {
-    letter-spacing: -0.47px;
+section div {
+    background-color: #262629;
+    padding: 32px;
+    padding-top: 24px;
+    
+    border-radius: 8px;
+
+
+}
+
+section h2{
+    
+    font-weight: 900;
+    font-size: 24px;
+    
 }
 
 section p {
-    
-    letter-spacing: -0.18px;
-    color: #C1C1C1;
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;    
+    color: #C1C1C1;;
 
 }
-ul{
-    display:flex;
+
+section ul{
+    display: flex;
     gap: 16px;
+
+    margin-top: 24px;
+
 }
 
-
+ul img {
+    border-radius: 8px;
+    width: 100px;
+}
