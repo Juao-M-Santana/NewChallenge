@@ -23,9 +23,10 @@ body *{/* colocando fonte*/
 
 }
 
-header{
-    margin-top: 32px;
-    text-align: center;
+header {
+
+    padding-top: 32px;
+    height: 152px;
     
 }
 
@@ -133,6 +134,50 @@ ul img {/* criando bordas na imagem */
 
 /* animações */
 
+header div {
+    animation: fromtop 1s .4s backwards;
+
+}
+
+main section{
+    animation:frombottom .7s backwards;
+}
+
+main section:nth-child(1) { /*filho numero 1*/
+    animation-delay: 2;
+}
+
+main section:nth-child(2) {/*filho numero 2*/
+    animation-delay: .4s;
+
+}
+main section:nth-child(3) {/*filho numero 3*/
+    animation-delay: .8s;
+
+}
 
 
+@keyframes fromtop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes frombottom{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+   
+}
 
