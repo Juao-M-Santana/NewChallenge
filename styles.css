@@ -156,7 +156,6 @@ main section:nth-child(3) {/*filho numero 3*/
 
 }
 
-
 @keyframes fromtop {
     from{
         opacity: 0;
